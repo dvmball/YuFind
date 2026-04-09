@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yufind</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="YuFind!" />
+        <span>YuFind!</span>
+      </div>
+
+      <div class="navbar-nav">
+        <div class="nav-left">
+          <a href="#home">Home</a>
+          <a href="my-reports.html">Laporanku</a>
+        </div>
+
+        <div class="nav-right">
+          <img src="img/loginpfp.png" alt="pfp" />
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-wrapper">
+        <div class="hero-text">
+          <h1>Kehilangan atau nemuin sesuatu?</h1>
+          <p>Laporin di sini!</p>
+
+          <div class="hero-buttons">
+            <a href="report-form.html" class="btn lost"
+              >Laporkan kehilangan barang</a
+            >
+            <a href="report-form.html" class="btn found"
+              >Laporkan barang ditemukan</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="img/heroimage.png" alt="illustration" />
+        </div>
+      </div>
+    </section>
+
+    <div class="custom-shape-divider-top-1775707964">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- SEARCH -->
+    <section class="search container">
+      <input type="text" placeholder="Cari barang hilang & ditemukan" />
+
+      <select>
+        <option value="" disabled selected>Kategori</option>
+        <option value="lost">Hilang</option>
+        <option value="found">Ditemukan</option>
+      </select>
+
+      <select>
+        <option value="">Lokasi</option>
+        <option value="uud">Gedung UUD 1945</option>
+        <option value="nkri">Gedung NKRI</option>
+        <option value="bti">Gedung BTI</option>
+        <option value="nusantara">Gedung Nusantara</option>
+        <option value="Parkiran">Parkiran</option>
+        <option value="others">Area Lain</option>
+      </select>
+
+      <button>Cari</button>
+    </section>
+
+    <!-- PREVIEW -->
+    <section class="preview container">
+      <div class="box">
+        <h3>Laporan Kehilangan Terbaru</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>Laptop</h4>
+            <p>Hilang: 16 Maret 2026</p>
+          </div>
+
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>Kunci</h4>
+            <p>Hilang: 14 Maret 2026</p>
+          </div>
+
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>Kunci</h4>
+            <p>Hilang: 14 Maret 2026</p>
+          </div>
+        </div>
+
+        <button class="small-btn">Tampilkan semua barang hilang</button>
+      </div>
+
+      <div class="box">
+        <h3>Laporan Temuan Terbaru</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>Kacamata</h4>
+            <p>Found: 14 Maret 2026</p>
+          </div>
+
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>STNK</h4>
+            <p>Found: 17 Maret 2026</p>
+          </div>
+
+          <div class="card">
+            <img src="https://via.placeholder.com/150" />
+            <h4>STNK</h4>
+            <p>Found: 17 Maret 2026</p>
+          </div>
+        </div>
+        <button class="small-btn">Tampilkan semua barang ditemukan</button>
+      </div>
+    </section>
+
+    <!-- HOW + TIPS + ILLUSTRATION WRAPPER -->
+    <section class="bottom-section container">
+      <!-- HOW -->
+      <div class="how box">
+        <h3>Gimana sih caranya?</h3>
+        <div class="steps">
+          <div class="step">
+            <img src="img/caranya1.png" alt="" />
+            <p>Kirim laporan / cari barang dari list</p>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div class="step">
+            <img src="img/caranya2.png" alt="" />
+            <p>Hubungi kontak untuk klaim / pengembalian</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIPS -->
+      <div class="tips box">
+        <h3>Tips Keamanan</h3>
+        <ul>
+          <li>Bertemu di tempat yang umum dan ramai</li>
+          <li>Pastikan kepemilikan barang dengan jelas</li>
+          <li>Tetap waspada & berhati-hati</li>
+        </ul>
+      </div>
+
+      <!-- ILLUSTRATION -->
+      <div class="illustration">
+        <img src="img/ilustrasi.png" alt="YuFind!" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="endtitle">
+        <p>
+          <span>Y</span>udharta <span>F</span>ind & <span>I</span>dentify
+          <span>N</span>earby <span>D</span>rops
+        </p>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">dindadzikria</a> | &copy; 2026.</p>
+      </div>
+    </footer>
+  </body>
+</html>
