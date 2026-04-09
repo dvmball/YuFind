@@ -3,4 +3,4 @@ Yudharta Find &amp; Identify Nearby Drops (YuFind!) dirancang untuk membantu use
 
 Aplikasi berbasis web ini dibuat khususnya untuk memenuhi tugas akhir pada mata kuliah Pemrograman Web Lanjut.
 
-Domain: Akan segera tersedia
+Domain: Coming soon^^
