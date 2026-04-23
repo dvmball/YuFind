@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Laporan - YuFind!</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../img/logo.png" />
+        <a href="../index.html">YuFind!</a>
+      </div>
+
+      <div class="navbar-nav">
+        <div class="nav-left">
+          <a href="../index.html">Home</a>
+          <a href="my-reports.html">Laporanku</a>
+        </div>
+
+        <div class="nav-right">
+          <img src="../img/loginpfp.png" />
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FORM -->
+    <section class="form-section container">
+      <h2 id="form-title">Form Laporan</h2>
+
+      <form class="report-form">
+        <!-- hidden jenis -->
+        <input type="hidden" id="jenis" name="jenis" />
+
+        <div class="form-group">
+          <label>Jenis Laporan</label>
+          <select id="jenisDisplay" disabled>
+            <option value="lost">Kehilangan</option>
+            <option value="found">Ditemukan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Nama Barang</label>
+          <input
+            type="text"
+            name="namabarang"
+            placeholder="Contoh: Laptop Asus"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Deskripsi</label>
+          <textarea
+            placeholder="Ciri-ciri barang..."
+            name="deskripsi"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Lokasi</label>
+            <select name="lokasi" required>
+              <option value="">Pilih lokasi</option>
+              <option>Gedung UUD 1945</option>
+              <option>Gedung NKRI</option>
+              <option>Gedung BTI</option>
+              <option>Gedung Nusantara</option>
+              <option>Parkiran</option>
+              <option>Area Lain</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Tanggal</label>
+            <input type="date" name="tanggal" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Gambar</label>
+          <input type="file" name="gambarbarang" />
+        </div>
+
+        <div class="form-group">
+          <label>Kontak</label>
+          <input
+            type="text"
+            name="kontak"
+            placeholder="No WA / IG / Email"
+            required
+          />
+        </div>
+
+        <button type="submit" class="submit-btn">Kirim Laporan</button>
+      </form>
+    </section>
+  </body>
+  <script src="../js/script.js"></script>
+</html>

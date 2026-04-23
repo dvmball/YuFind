@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - YuFind!</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../img/logo.png" alt="YuFind!" />
+        <a href="../index.html">YuFind!</a>
+      </div>
+
+      <div class="navbar-nav">
+        <div class="nav-left">
+          <a href="../index.html">Home</a>
+          <a href="my-reports.html">Laporanku</a>
+        </div>
+
+        <div class="nav-right">
+          <img src="../img/loginpfp.png" alt="pfp" />
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- LOGIN SECTION -->
+    <section class="auth">
+      <div class="auth-container">
+        <h2>Masuk</h2>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="nim">NIM</label>
+            <input
+              type="text"
+              id="nim"
+              name="nim"
+              placeholder="Masukkan NIM"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukkan password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-auth">Masuk</button>
+        </form>
+
+        <p class="auth-switch">
+          Belum punya akun?
+          <a href="register.html">Daftar</a>
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
