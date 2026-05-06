@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laporanku - YuFind!</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <section class="my-reports-page container">
+      <div class="page-heading">
+        <p class="eyebrow">YuFind!</p>
+        <h2>Laporan Saya</h2>
+        <p>
+          Lihat semua laporan kehilangan dan penemuan yang pernah kamu buat.
+        </p>
+      </div>
+
+      <div id="myReportsList" class="my-report-list"></div>
+
+      <div id="emptyReports" class="empty-reports" style="display: none">
+        <div class="empty-icon">📦</div>
+        <h3>Belum ada laporan</h3>
+        <p>
+          Kamu belum pernah membuat laporan kehilangan atau penemuan barang.
+        </p>
+
+        <div class="empty-actions">
+          <a href="report-form.html?type=lost" class="btn-empty primary">
+            Laporkan Kehilangan
+          </a>
+          <a href="report-form.html?type=found" class="btn-empty secondary">
+            Laporkan Temuan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
