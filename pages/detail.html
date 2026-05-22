@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Laporan - YuFind!</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <section class="detail-page container">
+      <div id="detailLoading" class="detail-state">
+        <p>Memuat detail laporan...</p>
+      </div>
+
+      <div id="detailError" class="detail-state error" style="display: none">
+        <h3>Laporan tidak ditemukan</h3>
+        <p>Data laporan mungkin sudah dihapus atau ID laporan tidak valid.</p>
+        <a href="../index.html" class="btn-back">Kembali ke Home</a>
+      </div>
+
+      <article id="detailContent" class="detail-card" style="display: none">
+        <div class="detail-image">
+          <img id="detailImage" src="" alt="Foto barang" />
+        </div>
+
+        <div class="detail-info">
+          <span id="detailBadge" class="detail-badge"></span>
+
+          <h2 id="detailNamaBarang"></h2>
+
+          <div class="detail-meta">
+            <p>
+              <strong>Lokasi</strong>
+              <span id="detailLokasi"></span>
+            </p>
+
+            <p>
+              <strong>Tanggal</strong>
+              <span id="detailTanggal"></span>
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Deskripsi</h3>
+            <p id="detailDeskripsi"></p>
+          </div>
+
+          <div class="detail-section contact-box">
+            <h3>Kontak Pelapor</h3>
+            <p id="detailKontak"></p>
+          </div>
+
+          <div class="detail-actions">
+            <a href="javascript:history.back()" class="btn-back secondary">
+              Kembali
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

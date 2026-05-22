@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laporanku - YuFind!</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="my-reports-body">
+    <div id="navbar-container"></div>
+
+    <section class="my-reports-page container">
+      <div class="my-reports-hero">
+        <div class="page-heading">
+          <h2>LAPORANKU</h2>
+          <p>
+            Lihat semua laporan kehilangan dan penemuan yang pernah kamu buat.
+          </p>
+        </div>
+
+        <img
+          src="../img/myreport1.png"
+          alt="Laporanku Illustration"
+          class="myreport-hero-img"
+        />
+      </div>
+
+      <div id="myReportsList" class="my-report-list"></div>
+
+      <div id="emptyReports" class="empty-reports" style="display: none">
+        <h3>Belum ada laporan</h3>
+        <p>
+          Kamu belum pernah membuat laporan kehilangan atau penemuan barang.
+        </p>
+      </div>
+    </section>
+
+    <section class="my-report-reminder container">
+      <img
+        src="../img/myreport2.png"
+        alt="Reminder"
+        class="reminder-img reminder-left"
+      />
+
+      <div class="reminder-text">
+        <h3>Ingat ya!</h3>
+        <p>
+          Pastikan informasi pada laporanmu akurat dan jelas agar proses
+          pencarian atau pengembalian lebih cepat.
+        </p>
+      </div>
+
+      <div class="reminder-actions">
+        <a href="report-form.html?type=lost" class="reminder-btn">
+          Laporkan Kehilangan
+          <span>+</span>
+        </a>
+
+        <a
+          href="report-form.html?type=found"
+          class="reminder-btn reminder-btn-dark"
+        >
+          Laporkan Temuan
+          <span>+</span>
+        </a>
+      </div>
+
+      <img
+        src="../img/myreport3.png"
+        alt="Report Illustration"
+        class="reminder-img reminder-right"
+      />
+    </section>
+
+    <footer>
+      <div class="endtitle">
+        <p>
+          <span>Y</span>udharta <span>F</span>ind & <span>I</span>dentify
+          <span>N</span>earby <span>D</span>rops
+        </p>
+      </div>
+
+      <div class="credit">
+        <p>created by dindadzikria | 2026</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

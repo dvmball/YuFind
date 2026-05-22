@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semua Laporan - YuFind!</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+
+    <!-- REPORTS PAGE -->
+    <section class="reports-page container">
+      <div class="page-heading">
+        <p class="eyebrow">YuFind!</p>
+        <h2>Semua Laporan</h2>
+        <p>
+          Temukan laporan barang hilang dan barang ditemukan di lingkungan
+          kampus.
+        </p>
+      </div>
+
+      <!-- FILTER AREA -->
+      <div class="reports-filter">
+        <input
+          type="text"
+          id="reportsKeyword"
+          placeholder="Cari nama barang atau deskripsi..."
+        />
+
+        <select id="reportsKategori">
+          <option value="">Semua Kategori</option>
+          <option value="lost">Hilang</option>
+          <option value="found">Ditemukan</option>
+        </select>
+
+        <select id="reportsLokasi">
+          <option value="">Semua Lokasi</option>
+          <option value="Gedung UUD 1945">Gedung UUD 1945</option>
+          <option value="Gedung NKRI">Gedung NKRI</option>
+          <option value="Gedung BTI">Gedung BTI</option>
+          <option value="Gedung Nusantara">Gedung Nusantara</option>
+          <option value="Parkiran">Parkiran</option>
+          <option value="Area Lain">Area Lain</option>
+        </select>
+
+        <select id="reportsSort">
+          <option value="newest">Terbaru</option>
+          <option value="oldest">Terlama</option>
+        </select>
+
+        <button type="button" id="btnFilterReports">Cari</button>
+      </div>
+
+      <!-- STATUS LOADING -->
+      <div id="reportsLoading" class="reports-state">
+        <p>Memuat laporan...</p>
+      </div>
+
+      <!-- STATUS ERROR -->
+      <div id="reportsError" class="reports-state error" style="display: none">
+        <h3>Gagal memuat laporan</h3>
+        <p>Terjadi kendala saat mengambil data laporan.</p>
+      </div>
+
+      <!-- STATUS EMPTY -->
+      <div id="reportsEmpty" class="reports-state empty" style="display: none">
+        <div class="empty-icon">🔎</div>
+        <h3>Laporan tidak ditemukan</h3>
+        <p>
+          Tidak ada laporan yang sesuai dengan kata kunci atau filter yang kamu
+          pilih.
+        </p>
+      </div>
+
+      <!-- LIST REPORTS -->
+      <div id="reportsList" class="reports-list"></div>
+    </section>
+
+    <script src="../js/script.js?v=3"></script>
+  </body>
+</html>
